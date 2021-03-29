@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primer"
+    tools:context=".Dialog">
+
+    <TextView
+        android:id="@+id/header_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Welcome!"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header_welcome"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/inputs"
+        android:paddingLeft="20dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/farm_name"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/input_name"
+        android:hint="Farm name"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/inputs"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/area_input"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/farm_name"
+        android:hint="Area"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/inputs"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/owner_input"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/area_input"
+        android:hint="Raisi hojagi"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/inputs"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/owner_input"
+        android:hint="Telephone"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/inputs"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/fill_constant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telephone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_style"
+        android:text="GO"
+        android:textSize="40dp"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
