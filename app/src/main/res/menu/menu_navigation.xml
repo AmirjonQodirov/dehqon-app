@@ -3,14 +3,14 @@
     <item
         android:id="@+id/report"
         android:icon="@drawable/ic_report"
-        android:title="Report" />
+        android:title="Чадвалхо" />
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:title="Пур кардан" />
     <item
         android:id="@+id/about"
         android:icon="@drawable/ic_settings"
-        android:title="About" />
+        android:title="Алока" />
 
 </menu>

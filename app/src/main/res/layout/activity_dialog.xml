@@ -11,14 +11,16 @@
         android:id="@+id/header_welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_alignParentTop="true"
         android:gravity="center"
-        android:textColor="@color/white"
-        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:text="Хуш омадед!"
         android:textSize="50sp"
         android:textStyle="bold" />
 
     <EditText
+        android:layout_marginTop="90dp"
         android:id="@+id/input_name"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -27,17 +29,17 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/inputs"
         android:paddingLeft="20dp"
-        android:hint="Name"
+        android:hint="Ному насаби Сардори хоҷагӣ"
         android:inputType="text"
-        android:textColorHint="@color/black" />
+        android:textColorHint="#A8000000" />
 
     <EditText
         android:id="@+id/farm_name"
         android:layout_width="match_parent"
         android:layout_below="@+id/input_name"
-        android:hint="Farm name"
+        android:hint="Номи хоҷагӣ"
         android:inputType="text"
-        android:textColorHint="@color/black"
+        android:textColorHint="#A8000000"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -49,22 +51,9 @@
         android:id="@+id/area_input"
         android:layout_width="match_parent"
         android:layout_below="@+id/farm_name"
-        android:hint="Area"
+        android:hint="Масоҳат (гектар)"
         android:inputType="number"
-        android:textColorHint="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/inputs"
-        android:layout_height="40dp"
-        android:paddingLeft="20dp" />
-
-    <EditText
-        android:id="@+id/owner_input"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/area_input"
-        android:hint="Raisi hojagi"
-        android:textColorHint="@color/black"
+        android:textColorHint="#A8000000"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -75,10 +64,10 @@
     <EditText
         android:id="@+id/telephone"
         android:layout_width="match_parent"
-        android:layout_below="@+id/owner_input"
-        android:hint="Telephone"
+        android:layout_below="@+id/area_input"
+        android:hint="Рақами телефон"
         android:inputType="phone"
-        android:textColorHint="@color/black"
+        android:textColorHint="#80000000"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -91,11 +80,11 @@
         android:id="@+id/fill_constant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/telephone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
         android:layout_centerInParent="true"
-        android:background="@drawable/button_style"
-        android:text="GO"
+        android:background="@drawable/ic_go"
         android:textSize="40dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
 </RelativeLayout>

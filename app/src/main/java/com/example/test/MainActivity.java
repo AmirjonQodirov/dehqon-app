@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.test.buttons.Button1;
+import com.example.test.buttons.Button2;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,9 +24,7 @@ public class MainActivity extends AppCompatActivity {
         boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("isFirstRun", true);
         if (isFirstRun) {
-            //show start activity
             startActivity(new Intent(MainActivity.this, Dialog.class));
-            //Toast.makeText(MainActivity.this, "First Run", Toast.LENGTH_LONG).show();
         }
 
         BottomNavigationView bnv = findViewById(R.id.bottom_nav);
@@ -50,11 +49,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn = findViewById(R.id.btn1);
-        btn.setOnClickListener(new View.OnClickListener() {
+        Button btn1 = findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Button1.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn2 = findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Button2.class);
                 startActivity(intent);
             }
         });

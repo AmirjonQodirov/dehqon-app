@@ -13,8 +13,8 @@ import com.example.test.buttons.Button1;
 
 public class Dialog extends AppCompatActivity {
 
-    EditText name, farm_name, area, owner, phone;
-    String cons_name, cons_farm_name, cons_owner, cons_phone, cons_area;
+    EditText name, farm_name, area,  phone;
+    String cons_name, cons_farm_name, cons_phone, cons_area;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +28,14 @@ public class Dialog extends AppCompatActivity {
                 name = findViewById(R.id.input_name);
                 farm_name = findViewById(R.id.farm_name);
                 area = findViewById(R.id.area_input);
-                owner = findViewById(R.id.owner_input);
                 phone = findViewById(R.id.telephone);
 
                 cons_name = name.getText().toString();
                 cons_farm_name = farm_name.getText().toString();
-                cons_owner = owner.getText().toString();
                 cons_phone = phone.getText().toString();
                 cons_area = area.getText().toString();
 
-                if (cons_area.length() > 0 && cons_phone.length() > 0 && cons_name.length() > 0 && cons_farm_name.length() > 0 && cons_owner.length() > 0){
+                if (cons_area.length() > 0 && cons_phone.length() > 0 && cons_name.length() > 0 && cons_farm_name.length() > 0){
 
                     getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                             .putBoolean("isFirstRun", false).apply();
@@ -45,8 +43,6 @@ public class Dialog extends AppCompatActivity {
                             putString("name", cons_name).apply();
                     getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().
                             putString("farm_name", cons_farm_name).apply();
-                    getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().
-                            putString("owner", cons_owner).apply();
                     getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().
                             putString("phone",cons_phone).apply();
                     getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().

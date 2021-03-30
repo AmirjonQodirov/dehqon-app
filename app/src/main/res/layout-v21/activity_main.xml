@@ -18,7 +18,7 @@
         android:textSize="45sp"
         android:textStyle="bold"
         android:layout_centerInParent="true"
-    />
+        />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
@@ -118,6 +118,6 @@
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"
-    />
+        />
 
 </RelativeLayout>

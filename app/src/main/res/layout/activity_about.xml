@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="center"
-        android:text="User Data:"
-        android:textColor="@color/white"
-        android:textSize="35sp"
+        android:text="Маълумот дарбораи дехкон:"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
         android:textStyle="bold" />
 
     <View
@@ -34,8 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/hr1"
-        android:text="user name:"
-        android:textColor="@color/white"
+        android:text="Ном ва насаб:"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/hr1"
         android:layout_toRightOf="@+id/usr_name_view"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_toEndOf="@+id/usr_name_view"
         />
@@ -59,10 +60,10 @@
     <TextView
         android:id="@+id/usr_farm_name_view"
         android:layout_below="@+id/usr_name_view"
-        android:text="user farm name:"
+        android:text="Номи хоҷагӣ:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -74,7 +75,7 @@
         android:layout_below="@+id/usr_name_view"
         android:layout_toEndOf="@+id/usr_farm_name_view"
         android:layout_toRightOf="@+id/usr_farm_name_view"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="5dp"
@@ -86,10 +87,10 @@
     <TextView
         android:id="@+id/usr_area_view"
         android:layout_below="@+id/usr_farm_name_view"
-        android:text="user area:"
+        android:text="Масохати хоҷагӣ:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -101,34 +102,7 @@
         android:layout_below="@+id/usr_farm_name_view"
         android:layout_toEndOf="@+id/usr_area_view"
         android:layout_toRightOf="@+id/usr_area_view"
-        android:textColor="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        />
-
-    <TextView
-        android:id="@+id/usr_owner_view"
-        android:layout_below="@+id/usr_area_view"
-        android:text="user RAIS:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="5dp"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:id="@+id/usr_owner"
-        android:layout_below="@+id/usr_area_view"
-        android:layout_toEndOf="@+id/usr_owner_view"
-        android:layout_toRightOf="@+id/usr_owner_view"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="5dp"
@@ -139,11 +113,11 @@
 
     <TextView
         android:id="@+id/usr_phone_view"
-        android:layout_below="@+id/usr_owner_view"
-        android:text="user phone:"
+        android:layout_below="@+id/usr_area_view"
+        android:text="Рақами телефон:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -152,10 +126,10 @@
         />
     <TextView
         android:id="@+id/usr_phone"
-        android:layout_below="@+id/usr_owner_view"
+        android:layout_below="@+id/usr_area_view"
         android:layout_toEndOf="@+id/usr_phone_view"
         android:layout_toRightOf="@+id/usr_phone_view"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="5dp"
@@ -165,7 +139,27 @@
         />
 
 
+    <TextView
+        android:id="@+id/info_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/usr_phone_view"
+        android:gravity="center"
+        android:text="Бо мо пайваст шавед:"
+        android:textColor="@color/black"
+        android:layout_marginTop="90dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
+    <View
+        android:id="@+id/hr2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/info_data"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff" />
 
 
 
@@ -174,7 +168,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/grey"
+        app:itemBackground="@color/black"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />

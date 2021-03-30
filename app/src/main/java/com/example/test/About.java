@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class About extends AppCompatActivity {
-    TextView name, farm_name, owner, phone, area;
+    TextView name, farm_name, phone, area;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +30,6 @@ public class About extends AppCompatActivity {
             farm_name.setText(
                     getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                             .getString("farm_name", "NULL")
-            );
-            owner = findViewById(R.id.usr_owner);
-            owner.setText(
-                    getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                            .getString("owner", "NULL")
             );
             phone = findViewById(R.id.usr_phone);
             phone.setText(
