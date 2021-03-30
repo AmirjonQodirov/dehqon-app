@@ -50,9 +50,6 @@ public class Dialog extends AppCompatActivity {
                     Intent intent = new Intent(Dialog.this, MainActivity.class);
                     startActivity(intent);
                 }
-
-
-
             }
         });
     }
