@@ -29,18 +29,28 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="#ffffff" />
-    <TextView
-        android:id="@+id/txt_btn_1"
+
+    <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/reports_hr1"
-        android:text="Корҳои механикӣ"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="2dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="2dp"
+        tools:targetApi="lollipop"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:iconSize="50dp"
+        android:backgroundTint="#BCBCBC"
+        android:text="Корҳои механикӣ (pdf)"
+        app:cornerRadius="10dp"
+        android:id="@+id/btn1_on_report"
+        app:icon="@drawable/ic_pdf_file"
         />
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.example.test.buttons.Button1;
 
+import es.dmoral.toasty.Toasty;
+
 public class Dialog extends AppCompatActivity {
 
     EditText name, farm_name, area,  phone;
@@ -49,6 +51,11 @@ public class Dialog extends AppCompatActivity {
                             putString("area", cons_area).apply();
                     Intent intent = new Intent(Dialog.this, MainActivity.class);
                     startActivity(intent);
+                }
+                else{
+                    Toasty.error(Dialog.this,
+                            "Бодиккат данныхоро дароред",
+                            Toast.LENGTH_LONG,true).show();
                 }
             }
         });

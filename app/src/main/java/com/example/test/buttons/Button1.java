@@ -64,5 +64,6 @@ public class Button1 extends AppCompatActivity {
                 }
             }
         });
+        db.close();
     }
 }
