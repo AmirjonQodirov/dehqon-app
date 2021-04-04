@@ -62,9 +62,6 @@ public class Reports extends AppCompatActivity {
                         DBHelper.TABLE_1_row6
                 };
                 createPDF("Корҳои_механикӣ.pdf", DBHelper.TABLE_1,table_rows);
-//                Toasty.success(Reports.this,
-//                        "PDF сохта шуд",
-//                        Toast.LENGTH_LONG, true).show();
             }
         });
 
